@@ -4,16 +4,17 @@ const CollectAndDisplayIP = () => {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    // const url = `https://api.ipify.org?format=json`;
-    const url = `https://api64.ipify.org?format=jsonp&callback=getip`;
+    const url = "https://api.ipify.org?format=json";
+    // const url = "https://api64.ipify.org?format=jsonp&callback=getip";
+    // const url = `https://api64.ipify.org?format=jsonp&callback=getip`;
 
-    const fetchIP = async () => {
-      await fetch(url).then((res) =>
-        res.json().then((val) => {
-          console.log(val);
+    const fetchIP = () => {
+      fetch(url)
+        .then((res) => res.json())
+        .then((val) => {
+          console.log({ val });
           setData(val.ip);
-        })
-      );
+        });
     };
     fetchIP();
   }, []);

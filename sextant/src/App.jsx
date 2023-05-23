@@ -2,6 +2,7 @@ import "./App.css";
 import Banner from "./components/Banner";
 import CollectAndDisplayIP from "./components/CollectAndDisplayIP";
 import Exhibit from "./components/Exhibit";
+import PylonConnector from "./components/PylonConnector";
 
 function App() {
   // const styles = {
@@ -16,6 +17,7 @@ function App() {
       <Exhibit>
         <Banner />
         <CollectAndDisplayIP />
+        <PylonConnector />
       </Exhibit>
     </>
   );
