@@ -1,5 +1,6 @@
 import "./App.css";
 import Banner from "./components/Banner";
+import CollectAndDisplayIP from "./components/CollectAndDisplayIP";
 import Exhibit from "./components/Exhibit";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       {/* <Banner /> */}
       <Exhibit>
         <Banner />
+        <CollectAndDisplayIP />
       </Exhibit>
     </>
   );
